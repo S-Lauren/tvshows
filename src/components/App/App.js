@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import FirstComponent from '../FirstComponent';
 import Series from '../../containers/Series';
-
+import 'whatwg-fetch';
 
 function App() {
   return (
