@@ -10,7 +10,6 @@ const SeriesList = (props) => {
 
                 })}
             </ul>
-       
     )
 
 }
