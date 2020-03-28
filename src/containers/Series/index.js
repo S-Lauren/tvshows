@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import SeriesList from '../../components/SeriesList';
+import FirstComponent from '../../components/FirstComponent';
 class Series extends Component {
 
 
@@ -10,6 +11,7 @@ class Series extends Component {
     }
 
     onChangeInput = e => {
+    
         this.setState({seriesName: e.target.value})
         fetch(`http://api.tvmaze.com/search/shows?q=${e.target.value}`)
         .then(resp => resp.json())
@@ -26,7 +28,7 @@ class Series extends Component {
         const {series, seriesName} = this.state; 
         return (
             <div> 
-                <p>No Friends, I've Been Chillin' Alone, Fuck Nigga Don't Be hittin' My Phone !</p>
+                <FirstComponent message = "hello moto"/>
                 <input type="text" placeholder="search" onChange={this.onChangeInput} value={this.state.seriesName}/>
                 <SeriesList list = {this.state.series} />
 

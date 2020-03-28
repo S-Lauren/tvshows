@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import FirstComponent from '../FirstComponent';
-import Series from '../../containers/Series';
 import 'whatwg-fetch';
+import Router from '../Router';
+
 
 function App() {
   return (
@@ -10,8 +10,8 @@ function App() {
       <header className="App-header">
         <p> Tv Show App </p>
       </header>
-      <FirstComponent message= "Search all your favorite tv-shows :)" />
-      <Series /> 
+      <Router /> 
+     
 
     </div>
   );
